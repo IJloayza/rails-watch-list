@@ -1,0 +1,9 @@
+<h1>Bookmarks#new</h1>
+<p>Find me in app/views/bookmarks/new.html.erb</p>
+<%= simple_form_for [@list, @bookmark] do |f|%>
+  <%= f.input :comment %>
+  <%= f.association :list %>
+  <%= f.association :movie %>
+  <%= f.submit "Submit", class: "btn btn-primary" %>
+<% end %>
+<%= link_to 'Back', "/lists/#{@list.id}", class: 'btn btn-primary' %>

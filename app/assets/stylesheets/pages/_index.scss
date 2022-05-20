@@ -1,0 +1,41 @@
+// Import page-specific CSS files here.
+@import "home";
+body {
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2luZW1hfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800');
+  background-size: cover;
+}
+h1 {
+  color: whitesmoke;
+  font-weight: bolder;
+  margin: 40px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lists {
+  text-decoration: none;
+  margin-left: 0px;
+  margin-top: 25px;
+  background-image: url('https://media.istockphoto.com/photos/dirt-film-frame-overlay-picture-id900886868?k=20&m=900886868&s=612x612&w=0&h=H9Al034SXQtTEX3bV27uGa_g3q3aD1VjPePmSUD6n-A=');
+  background-size: cover;
+  padding: 75px;
+  color: black;
+  font-size: large;
+  border-radius: 10px;
+  transition: 0.5s;
+  &:hover{
+    color: rgba($color: #cb2d2d, $alpha: 1.0);
+    font-size: xx-large;
+  }
+}
+
+#add{
+  position: absolute;
+  bottom: 25px;
+  right: 100px;
+}
